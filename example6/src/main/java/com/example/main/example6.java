@@ -9,8 +9,9 @@ public class example6 {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
 
-      Vehicle veh = context.getBean(Vehicle.class);
-      System.out.println("Vehicle name from Spring Context is: " + veh.getName()); //null
-      veh.printHello();  // print hello
+        Vehicle veh = context.getBean(Vehicle.class);
+        System.out.println("Vehicle name from Spring Context is: " + veh.getName()); //null
+        veh.printHello();  // print hello
+        context.close();
     }
 }
