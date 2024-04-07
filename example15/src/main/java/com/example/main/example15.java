@@ -18,5 +18,11 @@ public class example15 {
         if(vehicleServices1==vehicleServices2){
             System.out.println("VehicleServices bean is singleton scoped bean");
         }
+
+//        Lazy bean
+        System.out.println("Before retrieving the person beans");
+        Person person = context.getBean(Person.class);
+        System.out.println("After retrieving the person beans");
+
     }
 }
