@@ -61,7 +61,8 @@ public class VehicleServices {
 //        long timeElapsed = Duration.between(start,finish).toMillis();
 //        logger.info("Time took to execute applyBrake method: "+timeElapsed);
 //        return status;
-        return tyres.stop();
+        throw new NullPointerException("Self created null pointer exception");
+//        return tyres.stop();
     }
     public Speakers getSpeakers() {
         return speakers;
